@@ -1,0 +1,6 @@
+framework module Pods_Fter {
+  umbrella header "Pods-Fter-umbrella.h"
+
+  export *
+  module * { export * }
+}

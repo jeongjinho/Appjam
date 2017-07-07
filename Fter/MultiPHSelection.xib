@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MultiPHSelection" customModule="Fter" customModuleProvider="target">
+            <connections>
+                <outlet property="photoCollectionView" destination="PaD-pJ-5TV" id="5aA-hu-Alw"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aCF-hr-574" customClass="DefaultNavibar" customModule="Fter" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="66"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="사진 선택" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BSS-wp-pJO">
+                            <rect key="frame" x="155.5" y="35" width="64" height="20"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JTO-xv-7Xt">
+                            <rect key="frame" x="313" y="28" width="32" height="34"/>
+                            <state key="normal" title="선택">
+                                <color key="titleColor" red="0.40000000600000002" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="touchUpInsideSelectButton:" destination="-1" eventType="touchUpInside" id="Izq-u4-qdT"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="BSS-wp-pJO" firstAttribute="top" secondItem="aCF-hr-574" secondAttribute="top" constant="35" id="CnP-Qf-qjv"/>
+                        <constraint firstAttribute="height" constant="66" id="Fqs-0y-qCw"/>
+                        <constraint firstItem="JTO-xv-7Xt" firstAttribute="centerY" secondItem="BSS-wp-pJO" secondAttribute="centerY" id="wUk-JE-EHD"/>
+                        <constraint firstItem="BSS-wp-pJO" firstAttribute="centerX" secondItem="aCF-hr-574" secondAttribute="centerX" id="xUs-Xm-41t"/>
+                        <constraint firstAttribute="trailing" secondItem="JTO-xv-7Xt" secondAttribute="trailing" constant="30" id="zx3-hL-Vcb"/>
+                    </constraints>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="PaD-pJ-5TV">
+                    <rect key="frame" x="0.0" y="66" width="375" height="601"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="R8C-SN-PrJ">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="PaD-pJ-5TV" secondAttribute="trailing" id="AXx-z1-NkN"/>
+                <constraint firstItem="PaD-pJ-5TV" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="IuU-aP-JIX"/>
+                <constraint firstAttribute="trailing" secondItem="aCF-hr-574" secondAttribute="trailing" id="b8g-5T-pFI"/>
+                <constraint firstItem="PaD-pJ-5TV" firstAttribute="top" secondItem="aCF-hr-574" secondAttribute="bottom" id="c9e-4w-HtE"/>
+                <constraint firstAttribute="bottom" secondItem="PaD-pJ-5TV" secondAttribute="bottom" id="juJ-tJ-qug"/>
+                <constraint firstItem="aCF-hr-574" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="wOu-M1-UfT"/>
+                <constraint firstItem="aCF-hr-574" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="wog-dQ-J5G"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </view>
+    </objects>
+</document>

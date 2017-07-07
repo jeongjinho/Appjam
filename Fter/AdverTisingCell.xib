@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="AdverTisingCell" id="gTV-IL-0wX" customClass="AdverTisingCell" customModule="Fter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="301" height="193"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="301" height="193"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MBS-WG-4KI">
+                        <rect key="frame" x="0.0" y="0.0" width="301" height="193"/>
+                    </imageView>
+                    <view userInteractionEnabled="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="zg7-VW-N5p">
+                        <rect key="frame" x="0.0" y="0.0" width="301" height="193"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="772-Gc-rga">
+                                <rect key="frame" x="20" y="162" width="181" height="0.0"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.40000000000000002" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="772-Gc-rga" secondAttribute="trailing" constant="100" id="4Uj-jc-kwR"/>
+                            <constraint firstItem="772-Gc-rga" firstAttribute="leading" secondItem="zg7-VW-N5p" secondAttribute="leading" constant="20" id="Wvt-h8-3QV"/>
+                            <constraint firstAttribute="bottom" secondItem="772-Gc-rga" secondAttribute="bottom" constant="31" id="rzq-GX-Hzv"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ev-i2-SyW">
+                        <rect key="frame" x="0.0" y="0.0" width="33" height="33"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="33" id="c6V-kH-yYJ"/>
+                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="33" id="ljJ-lt-IO7"/>
+                        </constraints>
+                        <state key="normal" image="albumCheck"/>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="MBS-WG-4KI" secondAttribute="trailing" id="2iS-H3-SjY"/>
+                <constraint firstItem="zg7-VW-N5p" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="3wj-V9-JA5"/>
+                <constraint firstItem="MBS-WG-4KI" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="8un-2n-iQw"/>
+                <constraint firstAttribute="bottom" secondItem="zg7-VW-N5p" secondAttribute="bottom" id="90g-wd-au7"/>
+                <constraint firstItem="zg7-VW-N5p" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="9it-3w-ysL"/>
+                <constraint firstItem="6Ev-i2-SyW" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="DDj-xu-Qel"/>
+                <constraint firstItem="6Ev-i2-SyW" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="NxN-rD-xKi"/>
+                <constraint firstAttribute="bottom" secondItem="MBS-WG-4KI" secondAttribute="bottom" id="bar-DS-SCe"/>
+                <constraint firstAttribute="trailing" secondItem="zg7-VW-N5p" secondAttribute="trailing" id="dzU-oM-kc8"/>
+                <constraint firstItem="MBS-WG-4KI" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="rpT-Em-pSy"/>
+            </constraints>
+            <size key="customSize" width="301" height="193"/>
+            <connections>
+                <outlet property="advertisingImageView" destination="MBS-WG-4KI" id="fb2-6T-DzB"/>
+                <outlet property="advertisingTitle" destination="772-Gc-rga" id="Vhz-iK-bBP"/>
+                <outlet property="albumCheckButton" destination="6Ev-i2-SyW" id="fDf-Af-Vuv"/>
+                <outlet property="shadowView" destination="zg7-VW-N5p" id="ehc-Ue-VKj"/>
+            </connections>
+            <point key="canvasLocation" x="32.5" y="96.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="albumCheck" width="33" height="33"/>
+    </resources>
+</document>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReplyCell" rowHeight="65" id="KGk-i7-Jjw" customClass="ReplyCell" customModule="Fter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="291" height="65"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="291" height="64.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PxV-ha-c8m">
+                        <rect key="frame" x="44" y="11" width="34" height="11"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                        <state key="normal" title="홍주영">
+                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="touchUpInsideProfileButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="NXr-es-jBm"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="fill" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q3T-Zu-RLx">
+                        <rect key="frame" x="0.0" y="0.0" width="33" height="33"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="33" id="Kj4-7J-rj0"/>
+                            <constraint firstAttribute="width" constant="33" id="zAp-DT-cLp"/>
+                        </constraints>
+                        <connections>
+                            <action selector="touchUpInsideProfileButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="EbY-Ff-p95"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lt7-vH-McP">
+                        <rect key="frame" x="106" y="11" width="175" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="175" id="JWa-vL-3fZ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OPv-2G-bX4">
+                        <rect key="frame" x="106" y="26" width="175" height="12"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="10"/>
+                        <color key="textColor" red="0.79607843137254897" green="0.79607843137254897" blue="0.79607843137254897" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Q3T-Zu-RLx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="7GB-Z3-DZt"/>
+                    <constraint firstItem="OPv-2G-bX4" firstAttribute="leading" secondItem="Lt7-vH-McP" secondAttribute="leading" id="ARu-OT-etB"/>
+                    <constraint firstItem="Lt7-vH-McP" firstAttribute="top" secondItem="PxV-ha-c8m" secondAttribute="top" id="Uc2-Ol-bu3"/>
+                    <constraint firstItem="PxV-ha-c8m" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="3" id="VrK-7c-xAr"/>
+                    <constraint firstItem="Q3T-Zu-RLx" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="W7W-SQ-dKb"/>
+                    <constraint firstItem="PxV-ha-c8m" firstAttribute="centerY" secondItem="Q3T-Zu-RLx" secondAttribute="centerY" id="Xqz-UN-5Ns"/>
+                    <constraint firstItem="PxV-ha-c8m" firstAttribute="leading" secondItem="Q3T-Zu-RLx" secondAttribute="trailing" constant="11" id="ffP-el-TXn"/>
+                    <constraint firstItem="Lt7-vH-McP" firstAttribute="leading" secondItem="PxV-ha-c8m" secondAttribute="trailing" constant="28" id="hI0-kT-0O8"/>
+                    <constraint firstItem="OPv-2G-bX4" firstAttribute="trailing" secondItem="Lt7-vH-McP" secondAttribute="trailing" id="nei-1E-gem"/>
+                    <constraint firstItem="OPv-2G-bX4" firstAttribute="top" secondItem="Lt7-vH-McP" secondAttribute="bottom" id="sRC-Qc-1qv"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="replyLabel" destination="Lt7-vH-McP" id="QRQ-e9-XWo"/>
+                <outlet property="replyTimeLabel" destination="OPv-2G-bX4" id="3EA-Kj-0Uo"/>
+                <outlet property="replyerButton" destination="Q3T-Zu-RLx" id="PGn-VQ-whV"/>
+                <outlet property="replyerNameButton" destination="PxV-ha-c8m" id="UeU-az-FH7"/>
+            </connections>
+            <point key="canvasLocation" x="88.5" y="6.5"/>
+        </tableViewCell>
+        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="M0a-w2-MCq">
+            <rect key="frame" x="0.0" y="0.0" width="42" height="21"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+            <nil key="textColor"/>
+            <nil key="highlightedColor"/>
+            <point key="canvasLocation" x="270" y="103"/>
+        </label>
+    </objects>
+</document>
